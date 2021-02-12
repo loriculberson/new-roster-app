@@ -7,14 +7,12 @@ function Player(props){
 
   return (
     <>
-      <h2>{props.firstName}</h2>
+      <h4>{props.firstName} {props.lastName}</h4>
       <p>jersey number is {props.jersey}</p>
       {playerHobbies}
+      <button onClick={() => props.addFav(props.id)}>Add to Favorites</button>
     </>
   )
 }
 
 export default Player;
-
-//player name h3
-//add list of hobbies under each player

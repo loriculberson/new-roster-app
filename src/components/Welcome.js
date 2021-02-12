@@ -9,6 +9,7 @@ function Welcome(){
     <>
       <p>{message} sports fans!</p>
       <h2>Welcome Astros Fans!</h2>
+      <p>(Class exercise)</p>
     </>
   )
 }

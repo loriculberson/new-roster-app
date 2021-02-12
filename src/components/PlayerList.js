@@ -4,12 +4,16 @@ function PlayerList(props) {
   console.log("props", props);
 
   // create a list of Player components
-  const allPlayers = props.players.map((player) => {
+  const allPlayers = props.players.map((player, index) => {
     return (
         <Player 
+          id={player.id}
+          key={index}
           firstName={player.firstName} 
+          lastName={player.lastName} 
           jersey={player.jerseyNumber}
           hobbies={player.hobbies}
+          addFav={props.addFavorite}
         />
       )
   });
