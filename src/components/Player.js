@@ -1,7 +1,7 @@
 function Player(props){
   const playerHobbies = props.hobbies.length
-            ? props.hobbies.map(hobby => {
-              return <li key={props.id}>{hobby}</li>
+            ? props.hobbies.map((hobby, index) => {
+              return <li key={index}>{hobby}</li>
             }) 
             : <p>None listed</p>
 
